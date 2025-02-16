@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE 160: Assignment 3</title>    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color:#ffd1dc;
+        font-family: sans-serif;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .canvas-container {
+        background-color: #ffeef8;
+        padding: 20px;
+        border: 10px solid #cc6666;
+        text-align: center;
+        width: 700px;
+      }
+      .student-info {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-align: right;
+      }
+      canvas {
+        display: block;
+        margin: 0 auto;
+      }
+      .instructions {
+        max-width: 550px;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <div class="container">
+      <div class="canvas-container">
+        <canvas id="webgl" width="700" height="700">
+          Please use a browser that supports "canvas"
+        </canvas>
+        <div class="cute">
+          <span>⋆｡ﾟ♡｡⋆⋆˙⟡♡⟡⋆˙</span>
+          <span>⋆｡ﾟ♡｡⋆⋆˙⟡♡⟡⋆˙</span>
+          <span>⋆｡ﾟ♡｡⋆⋆˙⟡♡⟡⋆˙</span>
+          <span>⋆｡ﾟ♡｡⋆⋆˙⟡♡⟡⋆˙</span>
+          <span>⋆｡ﾟ♡｡⋆⋆˙⟡♡⟡⋆˙</span>
+          <span>⋆｡ﾟ♡｡⋆⋆˙⟡♡⟡⋆˙</span>
+        </div>
+      </div>
+      <div class="instructions">
+        <p>
+          Welcome to <strong>Love Island</strong> – a survival game (in which you always lose
+          bc love is not about winning or losing). Just kidding! (not). </p>
+        <p>The story behind this game is that the Valentines Bear (created in asg 2
+          before Valentines Day) has gone mad because he did not receive
+          anything for Valentines Day (૮(˶ㅠ︿ㅠ)ა). He has decided to take
+          revenge on you (🫵) (for whatever reason) by kidnapping you and
+          bringing you to Love Island, in which you will always try to run away
+          from him. 
+        </p>
+        <p>Unfortunately, this is a never ending cycle of you getting
+          caught ((ㅠ﹏ㅠ)). UNLESS, next year, he receives something for
+          Valentines Day. Either way, good luck! You are stuck here until next
+          year (or longer).
+        </p>
+        <p><strong>~ COMMANDS ~</strong></p>
+        <p>W - Forwards</p>
+        <p>S - Backwards</p>
+        <p>A - Move Left</p>
+        <p>D - Move Right</p>
+        <p>Z - Move Up</p>
+        <p>X - Move Down</p>
+        <p>Q - Look Left</p>
+        <p>E - Look Right</p>
+        <p>C - Create Block</p>
+        <p>V - Destroy Block</p>
+      </div>
+      <div class="student-info">
+        <h3>Student Info</h3>
+        <p><strong>Name:</strong> Nuha Fakrudeen</p>
+        <p><strong>Email:</strong> nfakrude@ucsc.edu</p>
+        <p><strong>Notes to grader:</strong> used animal from asg2, used code from video tutorials provided</p>
+      </div>
+    </div>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="asg3.js"></script>
+  </body>
+</html>
